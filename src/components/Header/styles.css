@@ -1,0 +1,23 @@
+header {
+    height: 8vh;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+#header-content {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    color:var(--color-border);
+    font-size: 1.8rem;
+}
+#header-content a {
+    margin-right: 15px;
+
+}
+#header-content a:hover {
+    font-weight: bold;
+    color: #AAEBB5;
+}
