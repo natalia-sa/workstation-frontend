@@ -8,7 +8,7 @@
 }
 #login-content {
     width: 30vw;
-    height: 30vh;
+    height: 23vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -42,18 +42,3 @@
     font-size: 1.5rem;
 }
 
-#login-content form button {
-    border-radius: 0.8rem;
-    height: 5vh;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: var(--color-border);
-    font: 500 1.7rem Poppins;
-    transition: background-color 0.2s;
-    margin-bottom: 1rem;
-    
-}
-#login-content form button:hover {
-    background-color: #3D6B70;
-}

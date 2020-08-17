@@ -1,9 +1,8 @@
 import React from 'react';
 import './styles.css';
 import Header from '../../components/Header/index';
-import {Link} from 'react-router-dom';
 
-export default function ProfilePage() {
+export default function EditProfile() {
     return (
         <div id="profile-page">
             <Header/>
@@ -11,36 +10,36 @@ export default function ProfilePage() {
                 <div id="profile-item">
                     <h3>Nome</h3>
                     <hr></hr>
-                    <p>nome</p>
+                    <input></input>
                     <br></br>
 
                     <h3>E-mail</h3>
                     <hr></hr>
-                    <p>email</p>
+                    <input></input>
                     <br></br>
 
                     <h3>CPF</h3>
                     <hr></hr>
-                    <p>cpf</p>
+                    <input></input>
                     <br></br>
 
                     <h3>Data de Nascimento</h3>
                     <hr></hr>
-                    <p>data</p>
+                    <input></input>
                     <br></br>
 
                     <h3>Endereço Pessoal</h3>
                     <hr></hr>
-                    <p>endereço</p>
+                    <input></input>
                     <br></br>
 
                     <h3>Biografia</h3>
                     <hr></hr>
-                    <p>biografia</p>
+                    <input></input>
                     <br></br>
 
                 </div>
-                <Link to="/edit">Editar</Link>
+                <button>Salvar</button>
                   
             </div>
         </div>

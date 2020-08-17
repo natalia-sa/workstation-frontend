@@ -41,10 +41,16 @@
     color: var(--color-border);
     font-size: 1.5rem;
 }
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-#login-content form button {
+.button a{
     border-radius: 0.8rem;
     height: 5vh;
+    width: 30vw;
     border: none;
     outline: none;
     cursor: pointer;
@@ -52,8 +58,16 @@
     font: 500 1.7rem Poppins;
     transition: background-color 0.2s;
     margin-bottom: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
     
 }
-#login-content form button:hover {
+
+#button a:hover {
     background-color: #3D6B70;
 }
+
+

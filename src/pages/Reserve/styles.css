@@ -1,0 +1,46 @@
+#reserve-page {
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+#content-reserve {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#schedule-item {
+    margin-top: 20px;
+    border-radius: 0.8rem;
+    margin-bottom: 15px;
+    padding: 1%;
+    width: 40vw;
+    background-color: #F0F3F4;
+}
+#create-schedule input {
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 3vh;
+    border-radius: 0.8rem;
+    border: 1px solid;
+    box-shadow: none;
+    outline: none;
+}
+#create-schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+}
+#create-schedule form {
+    display: flex;
+    justify-content: space-around;
+}
+h2 {
+    margin-bottom: 20px;
+}

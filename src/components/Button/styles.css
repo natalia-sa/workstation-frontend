@@ -1,0 +1,15 @@
+#button {
+    border-radius: 0.8rem;
+    height: 5vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-border);
+    font: 500 1.7rem Poppins;
+    transition: background-color 0.2s;
+    margin-bottom: 1rem;
+    
+}
+#button:hover {
+    background-color: #3D6B70;
+}
