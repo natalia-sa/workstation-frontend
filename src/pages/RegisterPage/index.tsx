@@ -1,6 +1,5 @@
 import React, {useState, FormEvent}from 'react';
 import './styles.css'
-import {Link} from 'react-router-dom';
 import api from '../../services/api';
 import {useHistory} from 'react-router-dom';
 

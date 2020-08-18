@@ -1,8 +1,8 @@
-import React,{useState, useEffect} from 'react';
+import React from 'react';
 import './styles.css';
 import Header from '../../components/Header/index';
 import {Link} from 'react-router-dom';
-import api from '../../services/api';
+
 
 export default function ProfilePage() {
     
