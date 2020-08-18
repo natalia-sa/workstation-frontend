@@ -1,9 +1,9 @@
-#workstations-page {
+/* #meeting-page {
     width: 100vw;
     height: 100vh;
     
 }
-#workstations-content {
+#meeting-content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
     width: 40vw;
     background-color: #F0F3F4;
 }
-.button2 a {
+.button3 a {
     width: 4vw;
     height: 3vh;
     border-radius: 0.8rem;
@@ -34,6 +34,10 @@
     justify-content: center;
     color: black;
 }
-.button2 a:hover {
+.button3 a:hover {
     background-color: #3D6B70;
 }
+
+form  {
+    margin-bottom: 20px;
+} */

@@ -1,20 +1,58 @@
-import React, {useState} from 'react';
+import React, {useState, FormEvent, useEffect} from 'react';
 import './styles.css';
 import Header from '../../components/Header/index';
 import {Link} from 'react-router-dom';
+import api from '../../services/api';
+import {getToken} from '../../services/auth';
 
 
 interface Item {
     name: string,
-    description: string
+    description: string,
+    _id: string
 }
 
 export default function Workstations() {
     const [items,setItems] = useState<Item[]>([]);
+    const [name, setName] = useState();
+    const [description, setDescription] = useState();
 
-    function addItems(name:string, description: string) {
-        const newArray: Item[] = [...items, {name: name, description: description}]
-        setItems(newArray);
+    useEffect( () => {
+        async function loadWorkstations(){
+            const token1 = getToken();
+            const authorization = "bearer " + token1;
+            const response = await api.get('/workstation',{headers: {authorization}} );
+            setItems(response.data);
+            
+            
+        }
+
+        loadWorkstations();
+    }, []);
+
+    async function addItems(e: FormEvent) {
+        e.preventDefault();
+        
+        const token1 = getToken();
+        const authorization = "bearer " + token1;
+
+        api.post('/workstation',{name, description})
+
+        const response = await api.get('/workstation',{headers: {authorization}} );
+        
+        setItems(response.data);
+    }
+
+    async function deleteItem(id: string) {
+        const token1 = getToken();
+        const authorization = "bearer " + token1;
+        
+        api.delete(`/workstation/${id}`,{headers: {authorization}} )
+
+        const response = await api.get('/workstation',{headers: {authorization}} );
+        
+        setItems(response.data);
+
     }
 
     
@@ -22,25 +60,39 @@ export default function Workstations() {
         <div id="workstations-page">
             <Header/>
             <div id="workstations-content">
+                <h2>Criar nova Workstation</h2>
+                <form onSubmit={addItems}>
+                        
+                    <label>Nome da workstation:</label>
+                    <input value={name} onChange={e => setName(e.target.value)}></input>
+
+                    <label>Descrição</label>
+                    <input value={description} onChange={e => setDescription(e.target.value)}></input>
+
+                    
+                    <button type="submit">Criar</button>
+                </form>
 
                 {
                     items.map(item => {
-                        console.log(item.name)
+                        
                         return (
-                            <div id="workstation-item">
+                            <div key={item._id} id="workstation-item">
                                 <h3>{item.name}</h3>
                                 <hr></hr>
                                 <p>{item.description}</p>
-                                <div className="button2">
+                                <div className="button3">
                                     <Link to="/reserve">Reservar</Link>
                                 </div>
+                                
+                                <button onClick={(()=> {deleteItem(item._id)})}>deletar</button>
                     
                             </div>
                         )
                     })
                 }
 
-                <button onClick={() => {addItems("nome", "ola")}}>Nova workstation</button>
+                
                 
             </div>
         </div>
