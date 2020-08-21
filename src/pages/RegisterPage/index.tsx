@@ -20,7 +20,7 @@ export default function RegisterPage() {
 
 
     return (
-        <div id="register-page">
+        <div className="blue-page">
             <div id="register-content">
                 <form onSubmit={handleSubmit}>
                     <input value={email} onChange={ e => setEmail(e.target.value)} placeholder="E-mail"/>

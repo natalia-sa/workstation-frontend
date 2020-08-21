@@ -57,7 +57,7 @@ export default function Workstations() {
 
     
     return (
-        <div id="workstations-page">
+        <div className="page">
             <Header/>
             <div id="workstations-content">
                 <h2>Criar nova Workstation</h2>

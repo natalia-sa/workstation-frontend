@@ -3,10 +3,11 @@ import './styles.css'
 import api from '../../services/api';
 import {useHistory} from 'react-router-dom';
 import {login, getToken} from '../../services/auth';
+import users from '../../assets/icons/users-cog-solid.svg';
 
 export default function LoginPage() {
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
     const history = useHistory(); 
 
     async function handleSubmit(e:FormEvent) {
@@ -25,8 +26,9 @@ export default function LoginPage() {
     
 
     return (
-        <div id="login-page">
+        <div className="blue-page">
             <div id="login-content">
+                <img src={users} alt="icon"></img>
                 <form onSubmit={handleSubmit}>
                     <input value={email} onChange={e => setEmail(e.target.value)}placeholder="E-mail"/>
                     <input value={password} onChange={e => setPassword(e.target.value)} placeholder="Senha"/>

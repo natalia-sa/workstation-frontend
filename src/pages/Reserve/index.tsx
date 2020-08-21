@@ -42,7 +42,7 @@ export default function Reserve() {
     }
 
     return (
-        <div id="reserve-page">
+        <div className="page">
         <Header/>
             <div id="content-reserve">
                 <div id="create-schedule">

@@ -4,7 +4,7 @@ import Header from '../../components/Header/index';
 
 export default function UserPage() {
     return (
-        <div id="user-page">
+        <div className="page">
             <Header/>
             <div id="user-content">
                 

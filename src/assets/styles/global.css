@@ -1,6 +1,5 @@
 :root {
     font-size: 60%;
-
     --color-background:#102326;
     --color-border: #227D9B;
     --color-button: #EF8600;
@@ -32,4 +31,17 @@ body, input button, textarea {
     :root {
         font-size: 62.5%;
     }
+}
+.page {
+    width: 100vw;
+    height: 100vh;
+}
+
+.blue-page {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

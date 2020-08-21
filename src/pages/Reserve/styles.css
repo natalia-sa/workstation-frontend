@@ -1,9 +1,3 @@
-#reserve-page {
-    width: 100vw;
-    height: 100vh;
-    
-}
-
 #content-reserve {
     width: 100%;
     display: flex;

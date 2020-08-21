@@ -4,7 +4,7 @@ import Header from '../../components/Header/index';
 
 export default function EditProfile() {
     return (
-        <div id="profile-page">
+        <div className="page">
             <Header/>
             <div id="profile-content">
                 <div id="profile-item">

@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 export default function ProfilePage() {
     
     return (
-        <div id="profile-page">
+        <div className="page">
             <Header/>
 
             <div id="profile-content">
