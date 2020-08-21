@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom';
 import api from '../../services/api';
 import {getToken} from '../../services/auth';
 
+
 interface Item {
     name: string,
     description: string,
@@ -52,7 +53,7 @@ export default function MeetingPage() {
 
     }
     return (
-        <div id="workstations-page">
+        <div className="page">
             <Header/>
             <div id="workstations-content">
                 <h2>Criar nova Meeting room</h2>
