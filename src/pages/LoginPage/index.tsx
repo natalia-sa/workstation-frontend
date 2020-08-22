@@ -2,7 +2,7 @@ import React,{useState, FormEvent} from 'react';
 import './styles.css'
 import api from '../../services/api';
 import {useHistory} from 'react-router-dom';
-import {login, getToken} from '../../services/auth';
+import {login} from '../../services/auth';
 import users from '../../assets/icons/users-cog-solid.svg';
 import {Link} from 'react-router-dom';
 
@@ -18,8 +18,6 @@ export default function LoginPage() {
             email, password
         });
         login(response.data.token);
-        
-        console.log(getToken());
 
         history.push('/user');
         
