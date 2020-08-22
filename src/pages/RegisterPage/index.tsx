@@ -24,9 +24,9 @@ export default function RegisterPage() {
             <div id="register-content">
                 <form onSubmit={handleSubmit}>
                     <input value={email} onChange={ e => setEmail(e.target.value)} placeholder="E-mail"/>
-                    <input value={password} onChange={ e => setPassword(e.target.value)} placeholder="Senha"/>
-                    <input placeholder="Confirme sua senha"/>
-                    <button className="button2" type="submit">
+                    <input type="password" value={password} onChange={ e => setPassword(e.target.value)} placeholder="Senha"/>
+                    <input type="password" placeholder="Confirme sua senha"/>
+                    <button className="button-blue" type="submit">
                         Cadastrar
                     </button>
                     <p>um e-mail de confirmação será enviado para o endereço cadastrado</p>

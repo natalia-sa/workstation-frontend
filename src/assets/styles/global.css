@@ -45,3 +45,23 @@ body, input button, textarea {
     justify-content: center;
     align-items: center;
 }
+.button-blue {
+    border-radius: 0.8rem;
+    height: 5vh;
+    width: 30vw;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--color-border);
+    font: 500 1.7rem Poppins;
+    transition: background-color 0.2s;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+.button-blue:hover {
+    background-color: #3D6B70;
+}

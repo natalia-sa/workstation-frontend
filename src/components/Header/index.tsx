@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <header>
             <div id="header-content">
-                    <div>CoWorking</div>
+                    <div><Link to="/user">CoWorking</Link></div>
                     <div>
                         <Link to="/workstations">Workstations</Link>
                         <Link to="/meetings">Meeting rooms</Link>

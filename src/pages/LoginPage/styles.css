@@ -5,7 +5,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
 #login-content form {
     width: 100%;
@@ -15,8 +14,12 @@
 }
 #login-content p {
     color: #E1CAC0;
-    cursor: pointer;
 }
+#login-content p a {
+    text-decoration: none;
+    color: white;
+}
+
 #login-content form  input{
     background-color: var(--color-background);
     border: solid 2px;
@@ -39,27 +42,22 @@
     align-items: center;
 }
 
-.button{
-    border-radius: 0.8rem;
-    height: 5vh;
-    width: 30vw;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: var(--color-border);
-    font: 500 1.7rem Poppins;
-    transition: background-color 0.2s;
-    margin-bottom: 1rem;
-    text-decoration: none;
+#icon {
+    height: 6vh;
+    color: #E1CAC0;
+    margin-bottom: 30px;
+    height: 3vh;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: center;
-    color: black;
-    
+    align-items: center;
 }
-
-.button:hover {
-    background-color: #3D6B70;
+#icon img {
+    margin-left: 10px;
+    height: 5vh;
+}
+#icon h2 {
+    margin: 0;
 }
 
 
