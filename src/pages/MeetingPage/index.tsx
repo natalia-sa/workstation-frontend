@@ -3,6 +3,7 @@ import Header from '../../components/Header/index';
 import {Link} from 'react-router-dom';
 import api from '../../services/api';
 import {getToken} from '../../services/auth';
+import CreateButton from '../../components/CreateButton/index';
 
 
 interface Item {
@@ -66,7 +67,7 @@ export default function MeetingPage() {
                     <input value={description} onChange={e => setDescription(e.target.value)}></input>
 
                     
-                    <button type="submit" id="submit">Criar</button>
+                    <CreateButton></CreateButton>
                 </form>
 
                 {
