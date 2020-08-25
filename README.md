@@ -1,4 +1,4 @@
-# CoWorking
+# :computer: CoWorking
 > frontend da aplicação de CoWorking
 # Sobre
 - Aplicação criada utilizando React.js e Typescript
