@@ -6,7 +6,6 @@ import api from '../../services/api';
 import {getToken} from '../../services/auth';
 import CreateButton from '../../components/CreateButton/index';
 
-
 interface Item {
     name: string,
     description: string,
@@ -23,9 +22,7 @@ export default function Workstations() {
             const token1 = getToken();
             const authorization = "bearer " + token1;
             const response = await api.get('/workstation',{headers: {authorization}} );
-            setItems(response.data);
-            
-            
+            setItems(response.data);   
         }
 
         loadWorkstations();
@@ -56,7 +53,6 @@ export default function Workstations() {
 
     }
 
-    
     return (
         <div className="page">
             <Header/>
@@ -70,7 +66,6 @@ export default function Workstations() {
                     <label>Descrição</label>
                     <input value={description} onChange={e => setDescription(e.target.value)}></input>
 
-                    
                     <CreateButton></CreateButton>
                 </form>
 
@@ -87,14 +82,10 @@ export default function Workstations() {
                                 </div>
                                 
                                 <button onClick={(()=> {deleteItem(item._id)})}>deletar</button>
-                    
                             </div>
                         )
                     })
-                }
-
-                
-                
+                } 
             </div>
         </div>
     )

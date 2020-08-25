@@ -8,3 +8,7 @@ button {
     cursor: pointer;
     margin-left: 5px;
 }
+
+button:hover {
+    background-color: #3D6B70;
+}

@@ -5,13 +5,11 @@ import api from '../../services/api';
 import {getToken} from '../../services/auth';
 import CreateButton from '../../components/CreateButton/index';
 
-
 interface Item {
     name: string,
     description: string,
     _id: string
 }
-
 
 export default function MeetingPage() {
     const [items, setItems] = useState<Item[]>([])
@@ -23,8 +21,7 @@ export default function MeetingPage() {
             const token1 = getToken();
             const authorization = "bearer " + token1;
             const response = await api.get('/meeting',{headers: {authorization}} );
-            setItems(response.data);
-            
+            setItems(response.data);   
         }
 
         loadMeetings();
@@ -65,8 +62,7 @@ export default function MeetingPage() {
 
                     <label>Descrição</label>
                     <input value={description} onChange={e => setDescription(e.target.value)}></input>
-
-                    
+ 
                     <CreateButton></CreateButton>
                 </form>
 
@@ -82,12 +78,10 @@ export default function MeetingPage() {
                                     <Link to="/reserve">Reservar</Link>
                                 </div>
                                 <button onClick={(()=> {deleteItem(item._id)})}>deletar</button>
-                    
                             </div>
                         )
                     })
                 }
-                
                 
             </div>
         </div>
