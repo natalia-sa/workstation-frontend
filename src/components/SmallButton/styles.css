@@ -2,11 +2,12 @@ button#create {
     background-color: var(--color-border);
     border: none;
     border-radius: 0.4rem;
-    width: 4vw;
-    min-width: 40px;
-    height: 2vh;
+    width: 5vw;
+    height: 3vh;
+    min-width: 50px;
     cursor: pointer;
     margin-left: 5px;
+    font-size: 1.6rem;
 }
 
 button#create:hover {
