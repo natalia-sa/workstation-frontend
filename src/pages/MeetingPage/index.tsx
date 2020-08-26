@@ -71,12 +71,16 @@ export default function MeetingPage() {
                         
                         return (
                             <div key={item._id} id="workstation-item">
+                            <div>
                                 <h3>{item.name}</h3>
-                                <hr></hr>
-                                <p>{item.description}</p>
                                 <div className="button3">
                                     <Link to="/reserve">Reservar</Link>
                                 </div>
+                            </div>
+                                
+                                <hr></hr>
+                                <p>{item.description}</p>
+                                
                                 <button onClick={(()=> {deleteItem(item._id)})}>deletar</button>
                             </div>
                         )

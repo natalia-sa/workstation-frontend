@@ -7,6 +7,7 @@
 }
 #profile-item {
     border-radius: 0.8rem;
+    min-height: 520px;
     margin-bottom: 15px;
     padding: 1%;
     width: 40vw;

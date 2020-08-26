@@ -74,12 +74,15 @@ export default function Workstations() {
                         
                         return (
                             <div key={item._id} id="workstation-item">
-                                <h3>{item.name}</h3>
+                                <div>
+                                    <h3>{item.name}</h3>
+                                    <div className="button3">
+                                        <Link to="/reserve">Reservar</Link>
+                                    </div>
+                                </div>
+
                                 <hr></hr>
                                 <p>{item.description}</p>
-                                <div className="button3">
-                                    <Link to="/reserve">Reservar</Link>
-                                </div>
                                 
                                 <button onClick={(()=> {deleteItem(item._id)})}>deletar</button>
                             </div>

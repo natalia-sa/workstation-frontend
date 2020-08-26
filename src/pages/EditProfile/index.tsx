@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles.css';
 import Header from '../../components/Header/index';
 
 export default function EditProfile() {

@@ -1,7 +1,7 @@
 button#create {
     background-color: var(--color-border);
     border: none;
-    border-radius: 0.4rem;
+    border-radius: 0.8rem;
     width: 5vw;
     height: 3vh;
     min-width: 50px;

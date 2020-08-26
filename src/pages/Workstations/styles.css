@@ -12,14 +12,22 @@
     width: 40vw;
     background-color: #F0F3F4;
 }
+#workstation-item div {
+    display: flex;
+    justify-content: space-between;
+}
+#workstation-item p {
+    margin-bottom: 30px;
+}
 .button3 a {
     width: 4vw;
+    min-width: 70px;
     height: 3vh;
     border-radius: 0.8rem;
     border: none;
     outline: none;
     cursor: pointer;
-    background-color: var(--color-border);
+    background-color: #8AD4B1;
     font: 500 1.4rem Poppins;
     transition: background-color 0.2s;
     margin-bottom: 1rem;
@@ -34,5 +42,5 @@
 }
 
 form {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
