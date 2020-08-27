@@ -2,8 +2,10 @@ import React from 'react';
 import './styles.css';
 import Header from '../../components/Header/index';
 import {Link} from 'react-router-dom';
+import {getUser} from '../../services/auth';
 
 export default function ProfilePage() {
+    const email = getUser();
     
     return (
         <div className="page">
@@ -13,32 +15,32 @@ export default function ProfilePage() {
                 <div id="profile-item">
                     <h3>Nome</h3>
                     <hr></hr>
-                    <p>nome</p>
+                    <p></p>
                     <br></br>
 
                     <h3>E-mail</h3>
                     <hr></hr>
-                    <p>email</p>
+                    <p>{email}</p>
                     <br></br>
 
                     <h3>CPF</h3>
                     <hr></hr>
-                    <p>cpf</p>
+                    <p></p>
                     <br></br>
 
                     <h3>Data de Nascimento</h3>
                     <hr></hr>
-                    <p>data</p>
+                    <p></p>
                     <br></br>
 
                     <h3>Endereço Pessoal</h3>
                     <hr></hr>
-                    <p>endereço</p>
+                    <p></p>
                     <br></br>
 
                     <h3>Biografia</h3>
                     <hr></hr>
-                    <p>biografia</p>
+                    <p></p>
                     <br></br>
 
                 </div>

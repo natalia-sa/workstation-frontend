@@ -14,10 +14,13 @@ export default function LoginPage() {
     async function handleSubmit(e:FormEvent) {
         e.preventDefault();
 
-        const response = await api.post('/auth/authenticate', {
+        const responseAuth = await api.post('/auth/authenticate', {
             email, password
         });
-        login(response.data.token);
+
+        const ResponseUser = await api.get(`/user/${email}`)
+        
+        login(responseAuth.data.token,ResponseUser.data.email);
 
         history.push('/user');
         
